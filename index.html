@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body id="body">
+    <!-- <table border="1" id="myTable"></table> -->
+    <div id="basic">BASIC ARITHMETIC TABLE</div>
+    <input type="number" placeholder="Enter Your Number Here" id="input">
+    <button id="multiply" onclick="multiply()">Create Multiplication Table</button>
+    <button id="addition" onclick="addition()">Create Addition Table</button>
+    <button id="subtract" onclick="subtract()">Create Substraction Table</button>
+    <button id="division" onclick="division()">Create Division Table</button>
+    <table id="disp"> 
+    <!-- </table>  -->
+    <script>
+        function multiply() {
+            if(input.value == ""){
+                alert("Type Number")
+            }else{
+
+                var x = document.getElementById("input").value;
+                for(var i = 1; i<=12; i++){
+                    console.log(`${x} * ${i} = ${x*i}`);
+                    disp.innerHTML += `
+                    <table><tr><td> ${x} * ${(i)} = ${x*i}</table></tr></td>`
+        } 
+        document.getElementById("input").value = ""
+        }
+    }
+
+        function addition() {
+            if(input.value == ""){
+                alert("Type Number")
+            }else{
+            var x = document.getElementById("input").value;
+            for(var i = 1; i<=12; i++){
+            console.log(`${(x)} + ${i} = ${Number(x)+i}`);
+             disp.innerHTML += `
+             <table><tr><td> ${Number(x)} + ${(i)} = ${Number(x)+i}</table>`
+        }
+        }
+    }
+
+        function subtract() {
+            if(input.value == ""){
+                alert("Type Number")
+            }else{
+            var x = document.getElementById("input").value;
+            for(var i = 1; i<=12; i++){
+            console.log(`${(x)} - ${i} = ${Number(x)-i}`);
+             disp.innerHTML += `
+             <table><tr><td> ${Number(x)} - ${(i)} = ${Number(x)-i}</table>`
+        }
+        }
+        
+    }
+        function division() {
+            if(input.value == ""){
+                alert("Type Number")
+            }else{
+            var x = document.getElementById("input").value;
+            for(var i = 1; i<=12; i++){
+            console.log(`${(x)} / ${i} = ${Number(x)/i}`);
+             disp.innerHTML += `
+             <table><tr><td> ${Number(x)} / ${(i)} = ${Number(x)/i}</table>`
+        }
+        }
+    }
+         
+    </script>
+</body>
+</html>

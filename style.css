@@ -1,0 +1,55 @@
+#body{
+    background: linear-gradient(red, yellow, blue, purple, aqua, pink);
+}
+#basic{
+    font-size: 50px;
+    margin-top: 40px;
+    margin-left: 350px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: white;   
+}
+#input{
+    margin-left: 50px;
+    margin-top: 50px;
+    width: 200px;
+    height: 30px;
+
+}
+#multiply{
+    width: 250px;
+    height: 30px;
+    font-size: 17px;
+    font-weight: bold;
+}
+#addition{
+    width: 250px;
+    height: 30px;
+    font-size: 17px;
+    font-weight: bold;
+}
+#subtract{
+    width: 250px;
+    height: 30px;
+    font-size: 17px;
+    font-weight: bold;
+}
+#division{
+    width: 250px;
+    height: 30px;
+    font-size: 17px;
+    font-weight: bold;
+}
+::placeholder{
+    font-weight: bold !important;
+}
+#disp{
+    border: 0px solid black;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+tr,td{
+    border: 1px solid black;
+    color: black;
+}
