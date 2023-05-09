@@ -1,5 +1,6 @@
 #body{
-    background: linear-gradient(red, yellow, blue, purple, aqua, pink);
+    /* background: linear-gradient(red, yellow, blue, purple, aqua, pink); */
+    background-color: purple;
 }
 #basic{
     font-size: 50px;
@@ -44,12 +45,12 @@
     font-weight: bold !important;
 }
 #disp{
-    border: 0px solid black;
-    color: black;
+    border: 0px solid white;
+    color: white;
     font-weight: bold;
     font-size: 30px;
 }
 tr,td{
-    border: 1px solid black;
-    color: black;
+    border: 1px solid white;
+    color: white; 
 }
